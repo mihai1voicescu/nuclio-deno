@@ -78,14 +78,14 @@ interface Handler<Body, Headers extends Record<string, any> = {}, Fields extends
     run(context: Context, event: ReqEvent<Body, Fields, Headers>): Promise<iResponse<any, any>>;
 }
 
-const enum MESSAGE_TYPE {
+enum MESSAGE_TYPE {
     LOG = 'l',
     RESPONSE = 'r',
     METRIC = 'm',
     START = 's',
 }
 
-const enum LOG_LEVEL {
+enum LOG_LEVEL {
     DEBUG = 'debug',
     INFO = 'info',
     WARNING = 'warning',
