@@ -92,7 +92,7 @@ const enum LOG_LEVEL {
     ERROR = 'error',
 }
 
-export {
+export type {
     Trigger,
     ReqEvent,
     MESSAGE_TYPE,

@@ -1,6 +1,6 @@
 {
   "name": "nuclio-deno",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nulcio deno types",
   "main": "mod.ts",
   "scripts": {
