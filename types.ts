@@ -95,10 +95,12 @@ const enum LOG_LEVEL {
 export type {
     Trigger,
     ReqEvent,
-    MESSAGE_TYPE,
-    LOG_LEVEL,
     iResponse,
     Context,
     Handler,
-    ConnLogger
+}
+
+export {
+    MESSAGE_TYPE,
+    LOG_LEVEL,
 }
