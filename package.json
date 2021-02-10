@@ -1,0 +1,23 @@
+{
+  "name": "nuclio-deno",
+  "version": "1.0.1",
+  "description": "Nulcio deno types",
+  "main": "mod.ts",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihai1voicescu/nuclio-deno.git"
+  },
+  "keywords": [
+    "nuclio",
+    "deno"
+  ],
+  "author": "Mihai Voicescu <mihai1voicescu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mihai1voicescu/nuclio-deno/issues"
+  },
+  "homepage": "https://github.com/mihai1voicescu/nuclio-deno#readme"
+}

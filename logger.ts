@@ -1,5 +1,5 @@
 import {StringConn} from "./conn.ts";
-import {LOG_LEVEL, MESSAGE_TYPE} from "../../GolandProjects/nuclio/pkg/processor/runtime/deno/js/types.ts";
+import {LOG_LEVEL, MESSAGE_TYPE} from "./types.ts";
 
 
 class ConnLogger {
