@@ -73,9 +73,12 @@ interface iResponse<Body, Headers extends Record<string, any> = {}> {
 }
 
 interface Handler<Body, Headers extends Record<string, any> = {}, Fields extends Record<string, any> = {}> {
-    new(): Handler<Body, Headers, Fields>;
-
     run(context: Context, event: ReqEvent<Body, Fields, Headers>): Promise<iResponse<any, any>>;
+}
+
+interface HandlerConstructor {
+    new<Body, Headers extends Record<string, any> = {}, Fields extends Record<string, any> = {}>(): Handler<Body, Headers, Fields>;
+    readonly prototype: Handler<any>
 }
 
 enum MESSAGE_TYPE {
@@ -98,6 +101,7 @@ export type {
     iResponse,
     Context,
     Handler,
+    HandlerConstructor
 }
 
 export {
