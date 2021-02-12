@@ -56,14 +56,6 @@ class JSONConn<T = unknown> implements AsyncIterable<string> {
     close() {
         this.#conn.close();
     }
-
-    static async* listen<T>(path: string) {
-        const listener = Deno.listen({path, transport: 'unix'});
-
-        for await(const conn of listener) {
-            yield new JSONConn<T>(conn);
-        }
-    }
 }
 
 export {
